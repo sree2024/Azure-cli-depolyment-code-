@@ -4,14 +4,12 @@ az account show
 
 
 
+az group create --name "daarvisree" --location "east US"                                                vishnupriya1.onmicrosoft.com
 
-az group create --name "daarvisree" --location "east US"     
-
-az group create --location eastus --resource-group Daarvi_dev-ops_group --tags {daarvi dev-ops}  correct                                          vishnupriya1.onmicrosoft.com
 az group list
 
 
-az ad sp create-for-rbac --name daarvigroup
+az ad sp create-for-rbac --name ansibleservice
 
 az group create --name daarvinewage --location eastus
 
@@ -38,7 +36,7 @@ az lock create --name LockGroup --lock-type CanNotDelete --resource-group exampl
 az lock delete --name exampleLock --resource-group exampleGroup                                                             delete resourcegroup
 
 
-az keyvault create --name sreevginaya --resource-group sreevidyavignya --location "eastus"
+az keyvault create --name projectintellijkeyvalut --resource-group ODL-az-303-512461 --location "eastus2"
 
 az storage account create -n daarvistorageac -g ODL-az-303-511307 -l WestUS2 --sku Standard_LRS
 
@@ -75,12 +73,6 @@ az account set –-subscription “My Demos”
 # create a new resource group in your subscription (or skip this step if
 # using an existing resource group)
 az group create –-location westus2 –-name MyResourceGroup
-
-az appservice plan create --name daarviapp --resource-group Daarvi_dev-ops_group --sku FREE
-
-az webapp create --name daarvi_web_app --resource-group Daarvi_dev-ops_group --plan daarviapp
-
-
 
 # create a new server in Azure MySQL database within the selected resource
 # group 
@@ -388,9 +380,7 @@ webappname=mywebapp$RANDOM
 
 az group create --location westeurope --name myResourceGroup
 
-az appservice plan create --name sreevignya --resource-group sreevidyavignya --sku FREE
-
-az webapp create --name sreevignyaweb --resource-group sreevidyavignya --plan sreevignya
+az appservice plan create --name $webappname --resource-group myResourceGroup --sku FREE
 
 az webapp create --name $webappname 
 
@@ -439,7 +429,7 @@ public class Funcation {
 	
 
 
-az webapp deployment slot create --name <newdaarviweb> --resource-group <sreevidyavignya> --name slot staging
+az webapp deployment slot create --name <appname> --resource-group <groupname> --name slot staging
 
 az webapp deployment slot swap --resour-group <groupname> --name <appname> --slot staging --traget-slot production 
 

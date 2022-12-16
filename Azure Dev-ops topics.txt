@@ -1,0 +1,49 @@
+Organization and project creation 
+project creation
+User Configurations
+User supports (free /paid)
+
+Walkthrought with Boards
+Epics 
+Features
+PBI
+Tasks 
+
+Walkthrought with Repors (Repositores)
+Branch polidcies
+Build validation 
+Branching Stretegy 
+pull requestin and approval process 
+copy respositoires from one projet to another project supports
+without lossing history (via PAT)
+
+Continuous integrations (pipelines )
+pipe line creation and its tiggers on PR approval/code change 
+sample.net project build creation and build 
+Test Case Exection and Code Coverage 
+publish Artifacts 
+Differce between YAML and Classic Editor 
+
+Contionous Depolyments (Release)
+Tiggers with CI
+Auto Schedule 
+Depolyment on Azure App servies 
+service principles 
+Depolyment of Data base via dacpac
+integrations with azure key valuts 
+auto mail setup on continous depolyment 
+custom versioning in releases 
+update app configuration as per enviorments
+
+
+Azure Artifcats 
+create Nuget package and push to azure artifcats
+consume nuget package in visual studio package 
+conume nuget package in ci 
+
+Interview Prepations 
+Commonly asked interview question
+
+
+
+

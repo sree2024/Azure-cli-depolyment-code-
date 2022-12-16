@@ -1,0 +1,10 @@
+az storage account create --name daarvi2storage --resource-group ODL-az-204-575512 --location westus2 --sku Standard_GRS
+
+
+
+az vm create --resource-group ODL-az-204-575512 --name DaarviVm1 --image win2019datacenter --admin-username sisltm --admin-password Mahi$$$$211980 --size Standard_D4s_v3 --use-unmanaged-disk --storage-sku Standard_GRS
+
+
+
+
+az keyvault create --name daarvikeyvalut --resource-group ODL-az-204-575512 -l West US 2
